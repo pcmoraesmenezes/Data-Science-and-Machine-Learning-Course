@@ -29,5 +29,34 @@ The task of probability is to look forward and use the laws made by statistics t
 ## Sets
 
 
+Probability use sets to represent events. A set is a collection of objects. The objects in a set are called elements. Sets are usually denoted by capital letters. The elements of a set are usually denoted by small letters.
+
+Is a unordered collection of distinct elements.
+
+By unordered means that if we get an arrengement of the elements of a set, it's still a set. But if the order of the elements matters, then we have a sequence. The objects must have any position in the set.
+
+By  distinct means that there are no duplicate elements in a set. If we have duplicate elements, we can remove them and the set will remain the same.
+
+Objects in a set are called elements. The elements of a set are usually denoted by small letters. It can be any type of object like numbers, letters, words, etc.
+
+### Exercises about sets
+
+1. Create a set with the following elements: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.
+
+    ```python
+    set1 = {1, 2, 3, 5, 8, 13, 21, 34, 55, 89}
+    ```
+
+2. Can a set have different types of objects?
+    
+        Yes, a set can have different types of objects. But is more common to have sets with the same type of objects. For example, a set of numbers, a set of letters, a set of words, etc.
+
+3. What's multiset? 
+
+    A multiset is a set that can have duplicate elements. The elements of a multiset are usually denoted by small letters with a subscript to indicate the number of times the element appears in the multiset.
+
+    ```python
+    multiset = {a1, a2, a3, ..., an}
+    ```
 
 
