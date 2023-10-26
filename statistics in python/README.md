@@ -266,5 +266,98 @@ A ∩ B ≠ ∅ = True
 
     (A - B)' = {1, 2, 3}
     A' ∩ B' = {1, 2, 3}
+## Experiment
+
+An experiment is a procedure that yields one of a given set of possible outcomes. The set of all possible outcomes of an experiment is called the sample space of the experiment.
+
+### Random experiment / Random trial
+
+A random experiment is an experiment whose outcome cannot be predicted with certainty.
+
+Examples:
+
+- Tossing a coin.
+
+- Rolling a die.
+
+- Drawing a card from a deck of cards.
+
+#### Outcomes
+
+Outcomes basically is the result of an experiment.
+
+#### Sample space
+
+The sample space of an experiment is the set of all possible outcomes of the experiment. The sample space is usually denoted by S or Ω.
+
+#### Exercices
+
+What is the sample space for an experiment involving rolling a 4-sided dice 3 times along with tossing coing?
+
+    There are 128 possible outcomes.
+    The outcomes are: (111T, 111H, 112T, 112H, 113T, 113H, ..., 444T, 444H)
 
 
+#### Events
+
+An event is a subset of the sample space of an experiment. An event is said to occur if the outcome of the experiment is an element of the event. Including the empty set and the sample space itself.
+
+#### Exercices
+
+How many possible events are there for an experiment having a sample space of
+size 16?
+
+    There are 2^16 possible events.
+
+What are disjoint events?
+
+    Two events are disjoint if they have no outcomes in common. In other words, two events are disjoint if their intersection is an empty set.
+
+Experiment: A four-sided die is rolled repeatedly until the first time (if ever)
+that an even number is rolled.
+
+What is the sample space of this experiment? Is the sample space finite or not?
+
+    The sample space is: {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, ...}
+    The sample space is infinite.
+
+Write down the event that the sum of rolls of the expiriment/trials is even
+
+    {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, ...}
+
+Is the above event finite? 
+
+    No, the event is infinite.
+
+
+## Probability Model
+
+A probability model is a mathematical description of an experiment consisting of the sample space S and a probability for each outcome in S.
+
+### Probability Law
+
+A probability law is a function that assigns a probability to each outcome in the sample space of an experiment.
+
+### Axioms of Probability
+
+1. The probability of an event is a non-negative real number.
+
+    ```python
+    P(A) >= 0
+    ```
+
+2. The probability of the sample space is 1.
+
+    ```python 
+    P(S) = 1
+    ```
+
+3. If A and B are disjoint events, then the probability of the union of A and B is the sum of the probabilities of A and B.
+
+    ```python
+    P(A ∪ B) = P(A) + P(B)
+    ```
+
+It's possible for an empty set to have a non-zero probability? 
+
+    No, the probability of an empty set is always zero.
