@@ -361,3 +361,24 @@ A probability law is a function that assigns a probability to each outcome in th
 It's possible for an empty set to have a non-zero probability? 
 
     No, the probability of an empty set is always zero.
+
+## Probability Model: Conditioning
+
+Two dices each with 6 faces. Whats the probability of at least one of the two dice will show 6? 
+
+    First imagine a sample space with all possible outcomes. The sample space is the set of all possible outcomes of an experiment. The sample space is usually denoted by S or Ω.
+
+    | Die 1 \ Die 2 | 1  | 2  | 3  | 4  | 5  | 6  |
+    |--------------|----|----|----|----|----|----|
+    | 1            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+    | 2            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+    | 3            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+    | 4            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+    | 5            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+    | 6            | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 | 1/36 |
+
+    Knowing that, we can look at the rows and columns and see that the probability of at least one of the two dice will show 6 is 11/36.
+
+Now, what's the probability of the sum will be 9 and at least one of the two dice will show 6?
+
+    We can have 6 and 3, 5 and 4, 4 and 5, 3 and 6. So, the probability is 4/36. But we want only the cases where at least on of the two dice will show 6. So, the cases will be 6 and 3 and 3 and 6. So, the probability is 2/36.
