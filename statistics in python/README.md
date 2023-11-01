@@ -382,3 +382,111 @@ Two dices each with 6 faces. Whats the probability of at least one of the two di
 Now, what's the probability of the sum will be 9 and at least one of the two dice will show 6?
 
     We can have 6 and 3, 5 and 4, 4 and 5, 3 and 6. So, the probability is 4/36. But we want only the cases where at least on of the two dice will show 6. So, the cases will be 6 and 3 and 3 and 6. So, the probability is 2/36.
+
+### Conditional Probability in Machine Learning
+
+The biggining of machine learning is the conditional probability.
+
+This is extremely important in regression and classification problems.
+
+## Probability Model: Law of Total Probability
+
+The law of total probability is a fundamental rule relating marginal probabilities to conditional probabilities. It expresses the total probability of an outcome which can be realized via several distinct events.
+
+### Independence 
+
+Two events A and B are independent if the probability of A and B is the product of the probabilities of A and B.
+
+```python
+
+P(A ∩ B) = P(A) * P(B)
+```
+
+``` python
+P(A|B) = P(A). Then A does not depend upon B
+```
+
+```python
+If P(A|B) = A 
+Means that P(A|B) = B?
+```
+For more then two events the independency holds if the probability of the intersection of all events is the product of the probabilities of all events.
+
+```python
+
+P(A ∩ B ∩ C) = P(A) * P(B)
+             = P(A) * P(C)
+             = P(B) * P(C)
+```
+
+### Conditional Independence
+
+Two events A and B are conditionally independent given a third event C if the probability of A and B given C is the product of the probabilities of A and B given C.
+
+```python
+P(A ∩ B | C) = P(A | C) * P(B | C)
+```
+
+### Exercise:
+
+Come up with an example where two dependent events become conditionally independent
+
+A box contains two coins: a regular coin and one fake two-headed coin (P(H) = 1). I choose a coin at random and toss it twice. Define the following events.
+
+    A = First coin toss results in an H.
+
+    B = Second coin toss results in an H.
+
+    C = Coin 1(regular) has been selected.
+
+Find P(A|C), P(B|C), P(A ∩ B|C), P(A), P(B) and P(A ∩ B).
+
+Note that A and B are NOT independent, but the are conditionally independent given C.
+
+    P(A|C) = 1/2
+    P(B|C) = 1/2
+    P(A ∩ B|C) = 1/4
+    P(A|C) * P(B|C) = 1/4
+    P(A) = 3/4
+    P(B) = 3/4
+    P(A ∩ B) = 9/16
+
+## Bayes Rule
+
+Bayes rule is a fundamental rule in probability that allows one to calculate conditional probabilities. It is a direct consequence of the definition of conditional probability.
+
+```python
+
+P(A|B) = P(B|A) * P(A) / P(B)
+```
+
+Prove:
+
+    A ∩ B = B ∩ A
+    P(A|B) * P(B) = P(B|A) * P(A)
+    P(A|B) = P(B|A) * P(A) / P(B)
+All machine learning algorithms are based on Bayes rule.
+
+## Towards Random Variables
+
+A random variable is a variable whose value is subject to variations due to chance. A random variable can take on a set of possible different values (similarly to other mathematical variables), each with an associated probability, in contrast to other mathematical variables.
+
+### Discrete Random Variables
+
+A discrete random variable is a random variable that can take on a countable number of values.
+
+### Continuous Random Variables
+
+A continuous random variable is a random variable that can take on an uncountable number of values.
+
+Those variables is essential to understand the probability distributions, and they are applied in machine learning.
+
+- Lets say that you roll a 4 sided die and toss two coins simultaneously. Build a probability model where all outcomes are equally likelly.
+
+- What is the probability that the roll will result even and the tosses will both result heads?
+
+    ```python
+    P(A ∩ B) = P(A) * P(B)
+    P(A ∩ B) = 1/4 * 1/4
+    P(A ∩ B) = 1/16
+    ```
