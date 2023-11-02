@@ -490,3 +490,48 @@ Those variables is essential to understand the probability distributions, and th
     P(A ∩ B) = 1/4 * 1/4
     P(A ∩ B) = 1/16
     ```
+
+## Random Variables
+
+Real - valued functions defined on the sample space of an experiment are called random variables.
+
+### Exercise
+
+If probability of a particular value of a random variable is zero, does it correspond to an empty/impossible event? 
+
+    Yes, that corresponds to an empty/impossible event. If a variable is really discrete, then it goes to am empty event.
+    P(X = a) = 0
+    X must be a continuous variable.
+
+
+### Bernoulli Random Variable
+
+First we must understand the difference between Discrete RV and Continuous RV.
+
+**Discrete RV** is a RV that can take on a countable number of values. Example: The number of heads in 10 coin tosses.
+Discreate does not means that the variables are integers. It means that the variables can take on a countable number of values. So the variable can be a float, but it must be a countable number of values.
+
+**Continuous RV** is a RV that can take on an uncountable number of values. Example: The height of a person.
+
+A Bernoulli random variable is a random variable that can take on two values, 0 and 1, and the probability of success is p and the probability of failure is 1 - p.
+
+### Geometric RV
+
+Supose that you keep tossing a coin until the first head appears.
+
+$X$ = number of tosses
+
+$X$ = 1, 2, 3, ...
+
+$P(X = k) = (1 - p)^{k - 1} * p$
+
+### Binomial RV
+
+Supose that you toss a coin n times and count the number of heads.
+
+$X$ = number of heads
+
+$X$ = 0, 1, 2, ..., n
+
+$P(X = k) = {n \choose k} * p^k * (1 - p)^{n - k}$
+
