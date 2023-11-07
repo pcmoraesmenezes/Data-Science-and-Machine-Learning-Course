@@ -535,3 +535,40 @@ $X$ = 0, 1, 2, ..., n
 
 $P(X = k) = {n \choose k} * p^k * (1 - p)^{n - k}$
 
+### Continuous RV
+
+The best way to describe a continous RV is beyond darts. Imagine that the center of the board is (0,0) and you want to know the distance from the center to the dart. The distance is a continous RV.
+
+Let say a line is already divided into 6 disjoint intervals of possibly different, but known, lengths. You select an interval at random by rolling a die. Let X is a random variable that represents the mid point of the selected interval. Is X a continuous random variable?
+    
+        No, X is a discrete random variable. Because X can take on a countable number of values.
+
+#### Probability Density Function (PDF)
+
+The probability density function (PDF) of a continuous random variable is a function that can be integrated to obtain the probability that the random variable takes a value in a given interval.
+
+The PDF common uses integrals to calculate the probability of a continous RV.
+
+The formula of the PDF is:
+
+$$\int_{-\infty}^{\infty} f(x) dx = 1$$
+
+The PDF is a function that describes the relative likelihood for this random variable to take on a given value.
+
+The proprierties of the PDF are:
+
+1. $f(x) \geq 0$ for all $x$.
+
+2. $\int_{-\infty}^{\infty} f(x) dx = 1$
+
+3. $P(a \leq X \leq b) = \int_{a}^{b} f(x) dx$
+
+4. $P(X = a) = 0$
+
+5. $P(a \leq X \leq b) = P(a < X < b)$
+
+6. $P(X \leq a) = P(X < a)$
+
+    ...
+
+
