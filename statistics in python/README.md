@@ -597,10 +597,29 @@ $\mu$ = mean
 
 $\sigma$ = standard deviation
 
-$X$ = -$\infty$, $\infty$
+$X$ = - $\infty$, $\infty$
 
 X at zero is the highest point of the curve.
 
 The impact of the mean and standard deviation in the gaussian RV is the same as the impact of the mean and standard deviation in the normal distribution.
+
+---
+### What is a Cumulative Distribution Function (CDF)?
+
+The cumulative distribution function (CDF) of a random variable X is the probability that X will take a value less than or equal to x.
+
+$F(x) = P(X \leq x)$
+
+The proprierties of the CDF are:
+
+1. $F(x)$ is non-decreasing.
+
+2. $\lim_{x \to -\infty} F(x) = 0$
+
+3. $\lim_{x \to \infty} F(x) = 1$
+
+4. $P(a \leq X \leq b) = F(b) - F(a)$
+
+---
 
 
