@@ -621,3 +621,23 @@ The proprierties of the CDF are:
 4. $P(a \leq X \leq b) = F(b) - F(a)$
 
 ---
+
+## Expectation
+
+If X is a discrete random variable with probability mass function $f(x)$, then the expected value of X is defined by:
+
+$E(X) = \sum_{x} x * f(x)$
+
+If X is a continuous random variable with probability density function $f(x)$, then the expected value of X is defined by:
+
+$E(X) = \int_{-\infty}^{\infty} x * f(x) dx$
+
+The expected value of a random variable is a measure of the center of the distribution of the random variable.
+
+The proprierties of the expected value are:
+
+1. $E(aX + b) = aE(X) + b$
+
+2. $E(X + Y) = E(X) + E(Y)$
+
+Expectation is a linear operator. It means that the expected value of a sum of random variables is the sum of the expected values of the random variables.
