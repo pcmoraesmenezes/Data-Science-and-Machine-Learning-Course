@@ -572,3 +572,35 @@ The proprierties of the PDF are:
     ...
 
 
+### Exponential RV
+
+It's always non-negative, can take elevated values and it's continuous .
+
+$f(x) = \lambda e^{-\lambda x}$
+
+$\lambda$ > 0
+
+$X$ = 0, 1, 2, ...
+
+What is the impact of the lambda in exponencial RV?
+    
+        The lambda is the rate parameter. The higher the lambda, the higher the rate of the exponential RV.
+
+
+### Gaussian RV
+
+Great contribution to the machine learning.
+
+$f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} (\frac{x - \mu}{\sigma})^2}$
+
+$\mu$ = mean
+
+$\sigma$ = standard deviation
+
+$X$ = -$\infty$, $\infty$
+
+X at zero is the highest point of the curve.
+
+The impact of the mean and standard deviation in the gaussian RV is the same as the impact of the mean and standard deviation in the normal distribution.
+
+
