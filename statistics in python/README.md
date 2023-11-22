@@ -641,3 +641,63 @@ The proprierties of the expected value are:
 2. $E(X + Y) = E(X) + E(Y)$
 
 Expectation is a linear operator. It means that the expected value of a sum of random variables is the sum of the expected values of the random variables.
+
+### Law of Large Numbers
+
+The law of large numbers states that as the number of trials of a random experiment increases, the empirical probability of an event will converge to the theoretical probability of the event.
+
+I.I.D - Independent and Identically Distributed Random Variables
+
+I.I.D Sample/Data, for example 2,4,7,9,2,0,1,3. We assume that the exists any random variable, for example X, with certain function.
+
+$X$, $P_X(x)$
+
+That random variable has a certain expected value, for example $E(X)$.
+
+$E(X) = \sum_{x} x * P_X(x)$
+
+The expectated value is called the population mean or true mean.
+
+Sample mean is the mean of the sample/data. In the example above, the sample mean is 4 ( ( 2 + 4 + 7 + 9 + 2 + 0 + 1 + 3 ) / 8.)
+
+All the random variable have the same distributions and the same expected value.
+
+| $R.V$ | $E[X]$ | $x range$ | $Parmrange$|
+|-------|--------|-----------|------------|
+| $Bernoulli(P)$ | $P$ | $0,1$ | $0 \leq P \leq 1$ |
+| $Binomial(n, P)$ | $n * P$ | $0,1,2,...,n$ | $0 \leq P \leq 1$ |
+| $Geometric(P)$ | $1/P$ | $X >= 0 $ | $0 \leq P \leq 1$ |
+| $Poisson(\lambda)$ | $\lambda$ | $X >= 0,1,...$ | $\lambda > 0$ |
+| $Normal(\mu, \sigma^2)$ | $\mu$ | $X >= -\infty, \infty$ | $\mu \in \mathbb{R}, \sigma^2 > 0$ |
+| $Exponential(\lambda)$ | $1/\lambda$ | $X >= 0$ | $\lambda > 0$ |
+
+As the sample size increases the sample mean will actually aproach to the population mean.
+
+### Transformations of Random Variables
+
+If X is a random variable with probability density function $f(x)$, then the random variable Y = g(X) has probability density function $f_Y(y)$ given by:
+
+$f_Y(y) = f_X(g^{-1}(y)) * | \frac{d}{dy} g^{-1}(y) |$
+
+---
+### Variance
+
+It's the expected value of the squared deviation from the mean.
+
+If X is a random variable with expected value $\mu$, then the variance of X is defined by:
+
+$Var(X) = E((X - \mu)^2)$
+
+The proprierties of the variance are:
+
+1. $Var(X) = E(X^2) - E(X)^2$
+
+2. $Var(aX + b) = a^2Var(X)$
+
+---
+
+#### What is the expected value of a transformation of a random variable?
+
+$E[y]$ Where y is some function of x.
+
+$E[y] = \sum_{y} y * P_{x}(y)$
