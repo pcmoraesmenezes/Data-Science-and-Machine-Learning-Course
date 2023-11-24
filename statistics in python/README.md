@@ -822,3 +822,74 @@ And the RV in dataset can be found [here](/statistics%20in%20python/RV_in_datase
 ### Sets
 
 The implementation of the sets in python can be found [here](/statistics%20in%20python/set_practice.ipynb)
+
+## Estimation
+
+Estimation is the process of inferring the parameters of a distribution given some data.
+
+$Normal(\mu, \sigma^2)$
+
+$exponential(\lambda)$
+
+$Geometric(p)$
+
+$Binomial(n, p)$
+
+This are the parameters of the distributions.
+
+### Non parametric estimation
+
+Non parametric estimation is the process of inferring the distribution of a random variable without assuming any parametric form for the distribution.
+
+### Maximum Likelihood Estimation (MLE)
+
+Maximum likelihood estimation is a method of estimating the parameters of a distribution by maximizing a likelihood function, so that under the assumed statistical model the observed data is most probable.
+
+First of all assume that you have a lot of data, and the first data is i.i.d which means all the data is indendent and identically distributed.
+
+$x_1, x_2, ..., x_n$
+
+Assume that all sample points belong to a certain distribution with parameters $a, b, c$. The goal is to find the parameters $a, b, c$. 
+
+Let's define an vector of parameters $\theta = (a, b, c)$.
+
+MLE uses the following thing:
+
+- All the samples are independent and identically distributed. Which means the 
+$f(x_{1}, x_{2} ... )$ = $f_{x_{1}} * f_{x_{2}} * ... * f_{x_{n}}$ Our goal is to optime the product: $f_{x_{1}} * f_{x_{2}} * ... * f_{x_{n}}$ and what values of a, b and c maximizes this product.
+
+#### Log Likelihood
+
+The log likelihood is the log of the likelihood function. The log likelihood is used because it's easier to work with sums than products.
+
+Assume for example that we have a lot of data, for example $x_1, x_2, ..., x_n$ and we want to find the parameters $\theta$ that maximizes the likelihood function.
+
+As we know the density for a exponential random variable is given by $f(x) = \lambda e^{-\lambda x}$
+
+$L(\lambda)$ = $\lambda e^{-\lambda x_{1}} * \lambda e^{-\lambda x_{2}} * ... * \lambda e^{-\lambda x_{n}}$
+
+If we simplify this we have:
+
+$L(\lambda)$ = $\lambda^{n} e^{-\lambda(x_{1}+x_{2}+...+x_{n})}$
+
+We can have: $\lambda^{n}e^{-\lambda s}$ Where s is the sum of all the samples.
+
+If we put a log in the likelihood function we have:
+
+$log(L(\lambda))$ = $nlog(\lambda) - \lambda s$
+
+The log likelihood is easier to work with because we can use sums instead of products.
+
+Logistic regression is a classification algorithm that uses the log likelihood.
+
+### Maximum A Posteriori Estimation (MAP)
+
+Maximum a posteriori estimation is a method of estimating the parameters of a distribution by maximizing a posterior distribution, so that under the assumed statistical model the observed data is most probable.
+
+In MLE we have a lot of data and we want to find the parameters that maximizes the likelihood function.
+
+In map we think the parameter is lambda is a random variable and we want to find the distribution of lambda.
+
+$\prod_{i=1}^{n} f_{x}(x_{i}) * f_{y}(\lambda)$
+
+It's extremely important in Machine Learning. Whatever you apply regularization in machine learning models in reality you are applying MAP.
