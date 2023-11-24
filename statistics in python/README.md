@@ -898,6 +898,4 @@ It's extremely important in Machine Learning. Whatever you apply regularization 
 
 Logistic regression is extremely powerful is compared with classic models in machine learning like linear regression. Deep learning is constructed based on logistic regression.
 
-Logistic regression is a classification algorithm that uses the log likelihood.
-
-i lov dick
+Logistic regression is a classification algorithm that uses the log likelihood. The goal of logistic regression is to find the probability of a certain event.
