@@ -1,5 +1,7 @@
 # Statistics in Python
 
+
+
 ## Probability vs Statistics
 
 1. What's probability?
@@ -701,3 +703,63 @@ The proprierties of the variance are:
 $E[y]$ Where y is some function of x.
 
 $E[y] = \sum_{y} y * P_{x}(y)$
+
+### Joint Probability Distribution
+
+The joint probability distribution of two discrete random variables X and Y is a function that assigns a probability to each pair of values (x, y) that X and Y can take on.
+
+$P(X = x, Y = y)$
+
+The proprierties of the joint probability distribution are:
+
+1. $P(X = x, Y = y) \geq 0$ for all x and y.
+
+2. $\sum_{x} \sum_{y} P(X = x, Y = y) = 1$
+
+3. $P(X = x, Y = y) = P(X = x) * P(Y = y)$ if X and Y are independent.
+
+### Multivariate Gaussian Distribution
+
+The multivariate Gaussian distribution is a generalization of the univariate Gaussian distribution to two or more variables.
+
+$x_1$, $x_2$, ..., $x_n$, x<sup>-></sup> = a vector of random variables.
+
+$f_{x}$ = joint probability density function of $x_1$, $x_2$, ..., $x_n$.
+
+$\mu$ = mean vector
+
+$\Sigma$ = covariance matrix
+
+$f_{x}(x) = \frac{1}{(2 \pi)^{n/2} |\Sigma|^{1/2}} e^{-\frac{1}{2} (x - \mu)^{T} \Sigma^{-1} (x - \mu)}$
+
+The proprierties of the multivariate gaussian distribution are:
+
+1. $f_{x}(x) \geq 0$ for all x.
+
+2. $\int_{-\infty}^{\infty} ... \int_{-\infty}^{\infty} f_{x}(x) dx_1 ... dx_n = 1$
+
+### Curse of Dimensionality
+
+The curse of dimensionality refers to various phenomena that arise when analyzing and organizing data in high-dimensional spaces (often with hundreds or thousands of dimensions) that do not occur in low-dimensional settings such as the three-dimensional physical space of everyday experience.
+
+The curse of dimensionality is the reason why we use PCA (Principal Component Analysis) to reduce the dimensionality of the data.
+
+## Codes
+
+### Python naive bayes implementation
+
+The implementation of the naive bayes in python using iris dataset can be found [here](/statistics%20in%20python/naive_bayes.py)
+
+### Expectations
+
+The implementation of the expectations in python can be found [here](/statistics%20in%20python/expectations.ipynb)
+
+### Random Variables
+
+The implementation of the random variables in python can be found [here](/statistics%20in%20python/RV.ipynb)
+
+And the RV in dataset can be found [here](/statistics%20in%20python/RV_in_datasets.ipynb)
+
+### Sets
+
+The implementation of the sets in python can be found [here](/statistics%20in%20python/set_practice.ipynb)
