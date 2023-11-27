@@ -59,6 +59,11 @@
         - [Expectations](#expectations)
         - [Sets](#sets-1)
 
+    - [Estimation](#estimation)
+        - [Non parametric estimation](#non-parametric-estimation)
+        - [Maximum Likelihood Estimation](#maximum-likelihood-estimation-mle)
+        - [Log Likelihood](#log-likelihood)
+        - [Maximum a Posteriori Estimation](#maximum-a-posteriori-estimation-map)
 ---
 
 ## Probability vs Statistics
@@ -893,9 +898,3 @@ In map we think the parameter is lambda is a random variable and we want to find
 $\prod_{i=1}^{n} f_{x}(x_{i}) * f_{y}(\lambda)$
 
 It's extremely important in Machine Learning. Whatever you apply regularization in machine learning models in reality you are applying MAP.
-
-### Logistic Regression
-
-Logistic regression is extremely powerful is compared with classic models in machine learning like linear regression. Deep learning is constructed based on logistic regression.
-
-Logistic regression is a classification algorithm that uses the log likelihood. The goal of logistic regression is to find the probability of a certain event.
