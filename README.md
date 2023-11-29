@@ -25,3 +25,5 @@ The course can be found [Here](https://www.udemy.com/course/data-science-machine
 - Section 4: [Mastering Probability and Statistics in Python](/statistics%20in%20python/README.md)
 
 ---
+
+- Section 5: [Machine Learning: Machine Learning Crash Course](/Machine%20Learning%20Crash/README.md)
