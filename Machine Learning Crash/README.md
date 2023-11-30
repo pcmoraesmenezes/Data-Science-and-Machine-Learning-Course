@@ -29,3 +29,15 @@ Unsupervised learning is the opposite of supervised learning. In this case, you 
 #### Reinforcement Learning
 
 In reinforcement learning, you have an agent that will interact with the environment. The agent will try to maximize the reward that it gets from the environment. For example, you have a robot that will try to learn how to walk. The robot will try to maximize the reward that it gets from the environment. The reward can be the distance that the robot walks. The robot will try to maximize the distance that it walks.
+
+## Features
+
+Basically they are the driving force to any machine learning algorithm. They are the variables that you will use to make predictions. For example, if you want to predict the price of a house, you will use features like the number of rooms, the size of the house, the location of the house, etc.
+
+The data that is used to train a model is called training data. The training data is composed of features and labels. The features are the variables that you will use to make predictions and the labels are the values that you want to predict.
+
+In python we define a variable X to store the features and a variable y to store the labels.
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/features_practice.ipynb)
