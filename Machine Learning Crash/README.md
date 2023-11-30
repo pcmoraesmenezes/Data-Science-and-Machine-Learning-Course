@@ -41,3 +41,25 @@ In python we define a variable X to store the features and a variable y to store
 ### Practical Example
 
 The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/features_practice.ipynb)
+
+## Regression
+
+Regression is a supervised learning algorithm. It is used to predict a continuous value. For example, if you want to predict the price of a house, you will use regression. The price of a house is a continuous value. It can be any value. It can be 1000, 2000, 3000, etc.
+
+So for supervised problems which your target variable is not categorical, but a continuous value that is called regression. The goal of regression is to predict a continuous value.
+
+The most common regression algorithms are:
+
+- Linear Regression
+
+- Polynomial Regression
+
+- Support Vector Regression
+
+- Decision Tree Regression
+
+- Random Forest Regression
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/regression_practice.ipynb)
