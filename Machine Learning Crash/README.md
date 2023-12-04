@@ -63,3 +63,71 @@ The most common regression algorithms are:
 ### Practical Example
 
 The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/regression_practice.ipynb)
+
+## Classification
+
+Classification is a supervised learning algorithm. It is used to predict a discrete value. For example, if you want to predict if a person has cancer or not, you will use classification. The person can have cancer or not. It is a discrete value. It can be 0 or 1.
+
+So for supervised problems which your target variable is categorical, that is called classification. The goal of classification is to predict a discrete value.
+
+The most common classification algorithms are:
+
+- Logistic Regression
+
+- K-Nearest Neighbors
+
+- Support Vector Machine
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/classification_practice.ipynb)
+
+## Clustering
+
+Clustering is a unsupervised learning algorithm. It is used to find patterns in data. For example, if you have a lot of data and you want to find patterns in the data, you will use clustering. The algorithm will try to find patterns in the data.
+
+So for unsupervised problems which your target variable is not defined, that is called clustering. The goal of clustering is to find patterns in data.
+
+The most common clustering algorithms are:
+
+- K-Means
+
+- Hierarchical Clustering
+
+- Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/clustering_practice.ipynb)
+
+## Different format of data
+
+In regression we use a continuous value to make predictions. In classification we use a discrete value to make predictions. But in some cases we don't have a continuous or discrete value to make predictions. In some cases we have a image, a text or a sound. In this cases we need to use different algorithms to make predictions.
+
+### Image
+
+Images are basically a matrix (2d-array) of numbers, each number the gray scale of a pixel. For example, if you have a image with 100x100 pixels, you will have a matrix with 100 rows and 100 columns. Each number in the matrix will be the gray scale of a pixel. The gray scale can be a number between 0 and 255. 0 is black and 255 is white.
+
+Each pixel is a feature.
+
+Before the CNN (Convolutional Neural Network) we used the SVM (Support Vector Machine) to make predictions with images. The SVM is a classification algorithm. It is used to classify images. The SVM is a supervised learning algorithm. It needs labels to make predictions. So we need to label the images before we can use the SVM to make predictions.
+
+### Video
+
+Videos are basically a sequence of images. We need to convert the vídeo to an array of features.
+
+For video is recommended to use the RNN (Recurrent Neural Network) to make predictions. This is because the RNN can learn the temporal patterns in the data. For example, if you have a video of a person walking, the RNN will learn the temporal patterns in the data. It will learn the sequence of images that represents a person walking.
+
+But is necessary a lot of data to train a RNN. If you don't have a lot of data, you can use a CNN to extract the features from the video and then use a RNN to make predictions. But if you don't have data to CNN and RNN, you can use classical machine learning algorithms to make predictions.
+
+### Audio
+
+Normally audio is a one dimensional array. Each number in the array is the amplitude of the sound wave at a particular time. For example, if you have a audio with 1000 samples, you will have a array with 1000 numbers. Each number in the array is the amplitude of the sound wave at a particular time.
+
+Each sample is a feature.
+
+
+### Text
+
+Text can appear in many different forms. It can be use to represent a value, for example **"The number of disciplines are 5"** or it can be use to represent a category, for example **"The color of the car is red"**. In the first case we can use regression to make predictions and in the second case we can use classification to make predictions.
+
