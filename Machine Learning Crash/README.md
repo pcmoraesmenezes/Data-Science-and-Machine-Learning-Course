@@ -131,3 +131,98 @@ Each sample is a feature.
 
 Text can appear in many different forms. It can be use to represent a value, for example **"The number of disciplines are 5"** or it can be use to represent a category, for example **"The color of the car is red"**. In the first case we can use regression to make predictions and in the second case we can use classification to make predictions.
 
+## Model
+
+Model is a function in the feature space. It is a function that maps the features to the labels. For example, if you have a house with 3 rooms and you want to predict the price of the house, you will use a model to make the prediction. The model will map the features (3 rooms) to the label (price of the house).
+
+The model is the core of machine learning. It is the function that maps the features to the labels. The model is the function that you will use to make predictions.
+
+### Dimensions
+
+Basically is the number of efatrues of the data set.
+
+### Parameters
+
+The parameters are the variables that the model will use to make predictions. For example, if you have a linear regression model, the parameters are the slope and the intercept. The model will use the slope and the intercept to make predictions.
+
+The process of estimating the parameters is called training the model. The model will learn the parameters from the data. The model will learn the parameters from the training data.
+
+$c = ax_{1} + bx_{2} + d$
+
+In example above, the parameters are a, b and d. The model will learn the parameters from the data. The goal of $a$, $b$ and $d$ is to minimize the error of the model.
+
+If we have a classification problem, the parameters are the coefficients of the decision boundary. For example 
+
+```python
+
+if c < 0:
+    y  - pred = -1
+else:
+    y - pred = 1
+
+```
+
+### Hyperparameters 
+
+The hyperparameters are the variables that you will use to control the model. For example, if you have a linear regression model, the hyperparameters are the learning rate and the number of iterations.
+
+### Error/Cost and Optimization
+
+**Result of Training**: is the value of the parameters of our model
+
+$y^{'}_{i}$ = Prediction (In python we call it y_pred)
+
+$y_{i}$ = Real Value
+
+What we want is to $y^{'}_{i}$ to be as close as possible to $y_{i}$
+
+**Error/Cost**: is the difference between the prediction and the real value
+
+$E$ = ($y^{'}_{1}$ - $y_{1}$) + ($y^{'}_{2}$ - $y_{2}$) + ... + ($y^{'}_{n}$ - $y_{n}$)
+
+The signs of the erros can be positive or negative. This can be a problem because the errors can cancel each other out. To solve this problem we have a lot of options. One of them is to square the errors.
+
+$E$ = ($y^{'}_{1}$ - $y_{1}$)$^{2}$ + ($y^{'}_{2}$ - $y_{2}$)$^{2}$ + ... + ($y^{'}_{n}$ - $y_{n}$)$^{2}$
+
+This is called the **Mean Squared Error**. The goal of the model is to minimize the error.
+
+There are several others errors. For example, the **Mean Absolute Error**.
+
+$E$ = |($y^{'}_{1}$ - $y_{1}$)| + |($y^{'}_{2}$ - $y_{2}$)| + ... + |($y^{'}_{n}$ - $y_{n}$)|
+
+To define the best error for your model, you need to understand the problem that you are trying to solve.
+Defining an best error can be an hyperparameter.
+
+### Linear Regression
+
+$y_{i} = ax + b$
+
+$y^{'}_{i} = ax + b$
+
+We can use matrix notation to define $y_{i}$
+
+Let's start with $x_{i}$
+
+First of all, $b$ is a constant $1$ and $a$ is the value of the feature $x_{i}$
+
+$ax_{i}+b$ = $\begin{bmatrix} x_{i} & 1 \end{bmatrix}$ $X$ $\begin{bmatrix} a \\ b \end{bmatrix}$ 
+
+We can extend the matrix notation to all the features, because $x_{i}$ is a vector
+
+$x_{i}$ = $\begin{bmatrix} x_{i1} & x_{i2} & \cdots & x_{in}\end{bmatrix}$
+
+$b$ = $\begin{bmatrix} 1 & 1 & \cdots & 1\end{bmatrix}$
+
+Let's now expand the matrix of $y_{i}$
+
+$y_{i}$ = $\begin{bmatrix} y_{1} \\ y_{2} \\ \vdots \\ y_{n} \end{bmatrix}$
+
+Now we can define $y_{i}$ in matrix notation
+
+$\begin{bmatrix} x_{i} & 1 \\ x_{i} & 1 \\ \vdots & \vdots \\ x_{i} & 1 \end{bmatrix}$ $X$ $\begin{bmatrix} a \\ b \end{bmatrix}$ =  $\begin{bmatrix} y_{1} \\ y_{2} \\ \vdots \\ y_{n} \end{bmatrix}$
+
+We have a $X_{n x 2}$ matrix, a $a_{2 x 1}$ matrix and a $y_{n x 1}$ matrix
+
+$Xa$ = $y$
+
+To solve this equation, we use the training data to build the matrix $X$ and the matrix $y$. Then we use the linear algebra to solve the equation (from numpy) 
