@@ -226,3 +226,10 @@ We have a $X_{n x 2}$ matrix, a $a_{2 x 1}$ matrix and a $y_{n x 1}$ matrix
 $Xa$ = $y$
 
 To solve this equation, we use the training data to build the matrix $X$ and the matrix $y$. Then we use the linear algebra to solve the equation (from numpy) 
+
+Linear Regression uses the **Mean Squared Error** to minimize the error.
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/model_/linear_regression.ipynb)
+
