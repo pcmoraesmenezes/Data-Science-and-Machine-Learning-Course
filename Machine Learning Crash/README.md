@@ -233,3 +233,100 @@ Linear Regression uses the **Mean Squared Error** to minimize the error.
 
 The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/model_/linear_regression.ipynb)
 
+### Minimum to Mean distance classifier
+
+Let's say we have two features
+
+$x$ and $l$
+
+We have two dimensional class 
+
+$y_{1}$
+
+$x$ and $l$ are the features and $y_{1}$ is the class. The features have the following values
+
+$\begin{bmatrix} x_{1} & l_{1} \\ x_{2} & l_{2} \\ \vdots & \vdots \\ x_{i} & l_{i} \end{bmatrix}$ 
+
+Where each index have an class
+
+$\begin{bmatrix} y_{1} \\ y_{2} \\ \vdots \\ y_{i} \end{bmatrix}$
+
+And y can be 0 or 1
+
+We take every that classifies as 0 and every point that classifies as 1. For example:
+
+$\begin{bmatrix} x_{1} & l_{1} \\ x_{2} & l_{2} \\ \vdots & \vdots \\ x_{i} & l_{i} \end{bmatrix}$ = $\begin{bmatrix} 0 \\ 1 \\ \vdots \\ 1 \end{bmatrix}$
+
+As we see the index 0 is classified as 0 and the index 1 are classified as 1. 
+
+$class 1$ =
+
+| $x$ | $l$ |
+| --- | --- |
+| $x_{1}$ | $l_{1}$ |
+| ... | ... |
+
+$class 2$ =
+
+| $x$ | $l$ |
+| --- | --- |
+| $x_{2}$ | $l_{2}$ |
+| ... | ... |
+
+What we do now is to calculate the mean of each class, in other words, we calculate the mean of each feature of each class. For example:
+
+$mean_{class 1}$ = $\begin{bmatrix} mean_{x_{1}} & mean_{l_{1}} \end{bmatrix}$
+
+$mean_{class 2}$ = $\begin{bmatrix} mean_{x_{2}} & mean_{l_{2}} \end{bmatrix}$
+
+Then we calculate the distance between the mean of each class and the point that we want to classify. For example:
+
+$distance_{class 1}$ = $\begin{bmatrix} x_{1} & l_{1} \end{bmatrix}$ - $\begin{bmatrix} mean_{x_{1}} & mean_{l_{1}} \end{bmatrix}$
+
+$distance_{class 2}$ = $\begin{bmatrix} x_{2} & l_{2} \end{bmatrix}$ - $\begin{bmatrix} mean_{x_{2}} & mean_{l_{2}} \end{bmatrix}$
+
+Then we calculate the norm of each distance. For example:
+
+$norm_{class 1}$ = $\sqrt{distance_{class 1}^{2}}$
+
+$norm_{class 2}$ = $\sqrt{distance_{class 2}^{2}}$
+
+Then we compare the norms. For example:
+
+if $norm_{class 1}$ < $norm_{class 2}$:
+
+    return 0
+
+else:
+
+    return 1
+
+
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/model_/minimum_to_mean_classifier.ipynb)
+
+### K-Means Clustering
+
+K-Means Clustering is a unsupervised learning algorithm. It is used to find patterns in data.
+
+You define the number of clusters that you want to find in the data.
+
+The algorithm will try to find the centroids of each cluster. The centroids are the mean of each cluster.
+
+The algorithm will try to find the best centroids for each cluster. The best centroids are the centroids that minimize the error of the model.
+
+The logic of the algorithm is the following:
+
+1. You define the number of clusters that you want to find in the data
+
+2. You define the centroids of each cluster
+
+3. You calculate the distance between each point and each centroid
+
+4. You assign each point to the closest centroid
+
+5. You calculate the mean of each cluster
+
+6. You repeat the steps 3, 4 and 5 until the centroids don't change
+
