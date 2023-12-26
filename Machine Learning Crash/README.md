@@ -330,3 +330,6 @@ The logic of the algorithm is the following:
 
 6. You repeat the steps 3, 4 and 5 until the centroids don't change
 
+### Practical Example
+
+The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/model_/k_means_clustering.ipynb)
