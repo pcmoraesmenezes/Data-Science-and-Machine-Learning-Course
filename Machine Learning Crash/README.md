@@ -338,6 +338,8 @@ The pratical example can be found [Here](/Machine%20Learning%20Crash/practice/mo
 
 Overfitting is when the model learns the training data too well. The model will learn the training data too well and it will not be able to generalize to new data. The model will not be able to make predictions with new data.
 
+To view an example of overfitting, click [Here](/Machine%20Learning%20Crash/practice/high_capacity_problem/overfitting.ipynb)
+
 #### Flexibility of the model
 
 The flexibility of the model is the ability of the model to fit the training data. The more flexible the model is, the more it will fit the training data.
@@ -349,3 +351,5 @@ Is proportional to the number of parameters of the model.
 So if a model has many parameters, it will be more flexible. If a model has few parameters, it will be less flexible.
 
 And the number of parameters is proportional to the number of features.
+
+To view an example of the flexibility of the model, click [Here](/Machine%20Learning%20Crash/practice/high_capacity_problem/regularization.ipynb)
