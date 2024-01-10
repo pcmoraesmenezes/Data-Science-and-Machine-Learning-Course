@@ -353,3 +353,12 @@ So if a model has many parameters, it will be more flexible. If a model has few 
 And the number of parameters is proportional to the number of features.
 
 To view an example of the flexibility of the model, click [Here](/Machine%20Learning%20Crash/practice/high_capacity_problem/regularization.ipynb)
+
+### Generalization and Validation Set
+
+Generalization is the ability of the model to make predictions with new data. The model will learn the training data and it will be able to make predictions with new data.
+
+The better way to deal with overfitting is to use a validation set. Based on that, it's necessary to get more and more data to train the model.
+
+Remember that it's necessary to split the data in training and test set. The training set is used to train the model and the test set is used to test the model. In some cases the split will be 80% for training and 20% for test. The higher amount of data you have, less the split will be. 
+
