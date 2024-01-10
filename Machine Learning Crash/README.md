@@ -362,3 +362,107 @@ The better way to deal with overfitting is to use a validation set. Based on tha
 
 Remember that it's necessary to split the data in training and test set. The training set is used to train the model and the test set is used to test the model. In some cases the split will be 80% for training and 20% for test. The higher amount of data you have, less the split will be. 
 
+### Accuracy
+
+Accuracy means how well the model is doing. It is the percentage of correct predictions that the model makes.
+
+$Accuracy = \frac{True Positive + True Negative}{True Positive + True Negative + False Positive + False Negative}$
+
+#### MSE (Mean Squared Error)
+
+MSE is the mean of the squared errors. It is used to measure the performance of a regression model. The goal of the model is to minimize the MSE.
+
+$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_{i} - y^{'}_{i})^{2}$
+
+It's valid say that some errors are just ok, and others are just huge and we want to penalize the huge errors. To do that we can use the MSE. For example let's say we build a cancer prediction model. If the model predicts that a person has no cancer, but actually the person has cancer, the error is huge. But if the model predicts that a person has cancer, but actually the person has no cancer, the error is just ok. So we want to penalize the huge errors. To do that we can use the MSE.
+
+#### Confusion Matrix
+
+The confusion matrix is a table that is used to evaluate the performance of a classification model. 
+
+For example let's refer to the cancer prediction model. The confusion matrix is a table that is used to evaluate the performance of the cancer prediction model.
+The confusion matrix is composed of 4 values:
+
+- True Positive (TP): The model predicts that the person has cancer and the person actually has cancer (Has and Has)
+
+- True Negative (TN): The model predicts that the person has no cancer and the person actually has no cancer (Has no and Has no)
+
+- False Positive (FP): The model predicts that the person has cancer and the person actually has no cancer (Has and Has no)
+
+- False Negative (FN): The model predicts that the person has no cancer and the person actually has cancer (Has no and Has)
+
+Let's say we have a 2 classes.
+
+- c1 (Has) 
+
+- c2 (Has no)
+
+The confusion matrix is a 3x3 matrix. The confusion matrix is composed of 9 values:
+
+$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$
+
+Where the first index is row and the second index is column $(C_{i*j})$
+
+Imagine now the following
+
+The matrix is composed like this
+
+$\begin{bmatrix} c1c1 & c1c2 \\ c2c1 & c2c2\end{bmatrix}$
+
+Where the first index is row and the second index is column $(C_{i*j})$
+
+Now the matrix will assume the following values
+
+- a: How many times the model predicted c1 and the actual value is c1 (TP, for example, the model predicted that the person has cancer and the person actually has cancer)
+
+- b: How many times the model predicted c1 and the actual value is c2 (FP, for example, the model predicted that the person has cancer and the person actually has no cancer)
+
+- c: How many times the model predicted c2 and the actual value is c1 (FN, for example, the model predicted that the person has no cancer and the person actually has cancer)
+
+- d: How many times the model predicted c2 and the actual value is c2 (TN, for example, the model predicted that the person has no cancer and the person actually has no cancer)
+
+The matrix is actually composed like this
+
+$\begin{bmatrix} TP & FP \\ FN & TN\end{bmatrix}$
+
+
+#### Precision
+
+$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$
+
+Where:
+
+$\begin {bmatrix} C1P1 & C1P2 \\ C2P1 & C2P2 \end{bmatrix}$
+
+$Precision = \frac{TP}{TP + FP}$
+
+$Precision = \frac{a}{a + b}$
+
+#### Recall
+
+$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$
+
+Where:
+
+$\begin {bmatrix} C1P1 & C1P2 \\ C2P1 & C2P2 \end{bmatrix}$
+
+$Recall = \frac{TP}{TP + FN}$
+
+$Recall = \frac{a}{a + c}$
+
+#### F1 Score
+
+$F1 Score = 2 * \frac{Precision * Recall}{Precision + Recall}$
+
+$F1 Score = 2 * \frac{\frac{a}{a + b} * \frac{a}{a + c}}{\frac{a}{a + b} + \frac{a}{a + c}}$
+
+$F1 Score = 2 * \frac{\frac{a^{2}}{(a + b)(a + c)}}{\frac{a(a + b + a + c)}{(a + b)(a + c)}}$
+
+$F1 Score = 2 * \frac{a^{2}}{a^{2} + a^{2} + ab + ac}$
+
+$F1 Score = 2 * \frac{a^{2}}{2a^{2} + ab + ac}$
+
+$F1 Score = \frac{2a^{2}}{2a^{2} + ab + ac}$
+
+
+
