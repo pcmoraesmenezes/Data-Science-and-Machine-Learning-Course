@@ -464,5 +464,29 @@ $F1 Score = 2 * \frac{a^{2}}{2a^{2} + ab + ac}$
 
 $F1 Score = \frac{2a^{2}}{2a^{2} + ab + ac}$
 
+### Curse of Dimensionality
+
+#### Probability Distribution
+
+What's the probability of a event A given that the event B happened?
+
+Bayes Theorem
+
+$P(A|B) = \frac{P(B|A) * P(A)}{P(B)}$
+
+Translation this to the machine learning world, we have the following:
+
+What's the probability of the target is onw (classification problem) given that the features have certain values? 
+
+$P(target|features) = \frac{P(features|target) * P(target)}{P(features)}$
+
+The curse of dimensionality occurs when the number of feature is too high. Then the probability of the target is one given that the features have certain values is too low. This is because the number of features is too high.
+
+There are some ways to deal with the curse of dimensionality. One of them is to reduce the number of features. Another one is to get more data.
 
 
+#### PCA (Principal Component Analysis)
+
+Given an Matriz $X_{n *m}$, where $n$ is the number of samples and $m$ is the number of features, the PCA will reduce the number of features to $k$ features, where $k$ is the number of components that you want to reduce the data.
+
+$k$ is smaller or equal to $m$. 
