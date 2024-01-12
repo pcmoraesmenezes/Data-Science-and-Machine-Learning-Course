@@ -490,3 +490,45 @@ There are some ways to deal with the curse of dimensionality. One of them is to 
 Given an Matriz $X_{n *m}$, where $n$ is the number of samples and $m$ is the number of features, the PCA will reduce the number of features to $k$ features, where $k$ is the number of components that you want to reduce the data.
 
 $k$ is smaller or equal to $m$. 
+
+## Introduction to Neural Networks
+
+Neural Networks are a set of algorithms that are inspired by the human brain.
+
+The $ANN_{s}$ (Artificial Neural Networks) are the most common type of Neural Networks. They are composed of neurons. The neurons are connected to each other. The neurons are organized in layers. The layers are organized in a network. The network is composed of input, hidden and output layers.
+
+![Neural Network Example](/images/1.png)
+
+The input layer is the layer that receives the input data. The hidden layers are the layers between the input and the output layers. The output layer is the layer that outputs the predictions.
+
+They are capable of deal with classification, clustering, regression and reinforcement learning problems.
+
+One of the great problem is that they are data hungry. They need a lot of data to train the model.
+
+They have a weight for each connection between the neurons. The weights are the parameters of the model. The model will learn the weights from the data.
+
+For example imagine the following hidden layer
+
+$\begin{bmatrix} x_{1} & x_{2} & x_{3} & ... & x_{i} \end{bmatrix}$ $X$ $\begin{bmatrix} w_{1} \\ w_{2} \\ w_{3} \\ ... \\ w_{i} \end{bmatrix}$ = $Y$
+
+Where $x_{i}$ is the input, $w_{i}$ is the weight and $y_{i}$ is the output.
+
+$Y$ = $x_{1}w_{1} + x_{2}w_{2} + x_{3}w_{3} + ... + x_{i}w_{i}$
+
+### Convolutional Neural Networks
+
+They are very good to deal with data images.
+
+![Convolutional Neural Network Example](/images/2.wepb)
+
+The features are learned internally. The features are not defined by the user. This is one of the great advantages of the CNN
+
+### Recurrent Neural Networks
+
+They are very good to deal with data sequences.
+
+![Recurrent Neural Network Example](/images/3.png)
+
+They are composed of a hidden state. The hidden state is passed to the next time step. The hidden state is the memory of the model
+
+They are very good to deal with data sequences because they can learn the temporal patterns in the data.
