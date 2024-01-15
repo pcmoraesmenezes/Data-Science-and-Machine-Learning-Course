@@ -532,3 +532,7 @@ They are very good to deal with data sequences.
 They are composed of a hidden state. The hidden state is passed to the next time step. The hidden state is the memory of the model
 
 They are very good to deal with data sequences because they can learn the temporal patterns in the data.
+
+## Practical Example
+
+Pratical of PCA can be found [here](/Machine%20Learning%20Crash/practice/PCA/introduc.ipynb)
