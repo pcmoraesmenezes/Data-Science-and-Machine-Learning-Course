@@ -586,3 +586,9 @@ They are very good to deal with data sequences because they can learn the tempor
 ## Practical Example
 
 Pratical of PCA can be found [here](/Machine%20Learning%20Crash/practice/PCA/introduc.ipynb)
+
+Pratical of Pipeline can be found [here](/Machine%20Learning%20Crash/practice/pipeline.ipynb)
+
+Pratical of Cross Validation can be found [here](/Machine%20Learning%20Crash/practice/cross_validation.ipynb)
+
+Pratical of Face Regonition example can be found [here](/Machine%20Learning%20Crash/practice/face_recognition.ipynb)
