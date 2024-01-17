@@ -27,3 +27,8 @@ The course can be found [Here](https://www.udemy.com/course/data-science-machine
 ---
 
 - Section 5: [Machine Learning: Machine Learning Crash Course](/Machine%20Learning%20Crash/README.md)
+
+
+---
+
+- Section 6: [Machine Learning Feature Engineering and Dimensionality Reduction](/Machine%20Learning:%20Feature%20Engineering%20and%20Dimensionality%20Reduction/README.md)
