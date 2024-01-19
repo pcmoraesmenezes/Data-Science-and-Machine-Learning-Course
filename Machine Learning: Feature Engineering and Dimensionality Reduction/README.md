@@ -1,5 +1,11 @@
 # Machine Learning: Feature Engineering and Dimensionality Reduction
 
+## Table of Contents
+
+- [Activity 1: Explore dimensionality of different data](#activity-1-explore-dimensionality-of-different-data)
+    - [Description](#description)
+    - [References](#references)
+
 ## Activity 1: Explore dimensionality of different data
 
 The dataset can be found [here](/Machine%20Learning:%20Feature%20Engineering%20and%20Dimensionality%20Reduction/dataset/Autism-Adult-Data.arff)
